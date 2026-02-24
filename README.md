@@ -38,13 +38,3 @@ Voltar a temas da faculdade permitiu aperfeiçoar a lógica por trás de cada m�
 
 ---
 
-## 🚀 Como Executar o Projeto
-
-1. Certifique-se de ter o **JDK 17+** e o **Maven** instalados.
-2. Adicione a dependência do Jackson ao seu arquivo `pom.xml`:
-   ```xml
-   <dependency>
-       <groupId>com.fasterxml.jackson.core</groupId>
-       <artifactId>jackson-databind</artifactId>
-       <version>2.15.2</version>
-   </dependency>
