@@ -1,0 +1,16 @@
+[ {
+  "idPedido" : 1,
+  "nomeCliente" : "de",
+  "email" : "de@gmail.com",
+  "status" : "NOVO",
+  "itens" : [ {
+    "produto" : {
+      "id" : 10,
+      "nome" : "camisetas",
+      "preco" : 100.0,
+      "quantidade" : 98
+    },
+    "quantidade" : 2,
+    "subtotal" : 200.0
+  } ]
+} ]

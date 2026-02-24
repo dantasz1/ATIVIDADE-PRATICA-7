@@ -1,20 +1,32 @@
 package br.edu.fatecpg.model;
 
+import java.util.ArrayList;
 import java.util.Objects;
+import java.util.Map;
+import java.util.HashMap;
 
 public class Produto {
 
-    private String id;
+    private Integer id;
     private String nome;
-    private String preco;
+    private double preco;
     private int quantidade;
 
+    public Produto() {
+    }
 
-    public String getId() {
+    public Produto(Integer id, String nome, double preco, int quantidade) {
+        this.id = id;
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidade = quantidade;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -26,11 +38,11 @@ public class Produto {
         this.nome = nome;
     }
 
-    public String getPreco() {
+    public double getPreco() {
         return preco;
     }
 
-    public void setPreco(String preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 
@@ -42,15 +54,9 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
-    @Override
-    public String toString() {
-        return "Produto{" +
-                "id='" + id + '\'' +
-                ", nome='" + nome + '\'' +
-                ", preco='" + preco + '\'' +
-                ", quantidade=" + quantidade +
-                '}';
-    }
+
+
+
 
     @Override
     public boolean equals(Object o) {
@@ -64,4 +70,17 @@ public class Produto {
         return Objects.hash(id, nome, preco, quantidade);
     }
 
+
+    @Override
+    public String toString() {
+        return "Produto{" +
+                "id='" + id + '\'' +
+                ", nome='" + nome + '\'' +
+                ", preco='" + preco + '\'' +
+                ", quantidade=" + quantidade +
+                '}';
+    }
+
+
 }
+
